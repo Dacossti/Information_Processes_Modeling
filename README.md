@@ -1,2 +1,2 @@
-# Information_Processes_Modeling
+# MATHEMATICAL_MODELING
  
