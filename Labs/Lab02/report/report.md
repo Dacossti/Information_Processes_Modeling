@@ -2,7 +2,7 @@
 # Front matter
 lang: ru-RU
 title: "Отчет по Лабораторной Работе №2"
-subtitle: "Протокола TCP и алгоритм управления очередью RED"
+subtitle: "Протокол TCP и алгоритм управления очередью RED"
 author: "Озьяс Стев Икнэль Дани"
 
 ## Pdf output format
