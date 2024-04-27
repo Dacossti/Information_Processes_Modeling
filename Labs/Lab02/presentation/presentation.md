@@ -69,7 +69,9 @@ section-titles: true
 
 Запустил его командой $ns$.
 
-![Запуск симулятора lab2.tcl](image/image2.png){ #fig:002 width=70% }
+![График динамики размера окна TCP](image/image2.png){ #fig:002 width=70% }
+
+![График динамики размера окна TCP](image/image3.png){ #fig:003 width=70% }
 
 
 ## Задача 2
@@ -77,39 +79,30 @@ section-titles: true
 
 Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с Reno на NewReno:
 
-![Изменение на узле s1 типа протокола TCP с Reno на NewReno](image/image3.png){ #fig:003 width=70% }
+![Изменение на узле s1 типа протокола TCP с Reno на NewReno](image/image4.png){ #fig:004 width=70% }
 
 ##
 
-Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с Reno на NewReno:
+Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с NewReno на Vegas:
 
-![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image3.png){ #fig:003 width=70% }
+![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image5.png){ #fig:005 width=70% }
 
 ##
 
 Внес сдледующие изменения при отображении окон с графиками:
 
 - Изменение цвета фона
-
-![Изменение цвета фона](image/image4.png){ #fig:004 width=70% }
-
-##
-
 - Изменение цвета траекторий
-
-![Изменение цвета траекторий](image/image5.png){ #fig:005 width=70% }
-
-##
-
 - Изменение подписей к осям
-
-![Изменение подписей к осям](image/image6.png){ #fig:006 width=70% }
-
-##
-
 - Изменение подписи траектории в легенде
 
-![Изменение подписи траектории в легенде](image/image7.png){ #fig:007 width=70% }
+![Изменение №1](image/image6.png){ #fig:006 width=70% }
+
+##
+
+![Изменение №2](image/image7.png){ #fig:007 width=70% }
+
+##
 
 
 # Выводы
