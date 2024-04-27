@@ -68,7 +68,7 @@ section-titles: true
 
 Сделал файл graph_plot исполняемым. Запустил симулятор lab3.tcl.
 
-![Команды и вывод через терминал](image/image4.png){ #fig:004 width=70% }
+![Команды и вывод через терминал](image/image3.png){ #fig:003 width=70% }
 
 ##
 
