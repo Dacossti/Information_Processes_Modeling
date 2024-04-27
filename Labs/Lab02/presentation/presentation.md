@@ -91,8 +91,6 @@ set tcp1 [$ns create-connection TCP/NewReno $node_(s1) TCPSink $node_(s3) 0]
 set tcp1 [$ns create-connection TCP/Vegas $node_(s1) TCPSink $node_(s3) 0]
 ```
 
-$$
-
 ![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image5.png){ #fig:005 width=70% }
 
 ##
@@ -101,11 +99,11 @@ $$
 
 - Изменение цвета фона:
 ```
--bg <color> , например -bg white
+-bg <color> #например -bg white
 ```
 - Изменение цвета траекторий: 
 ```
-puts $f "i.color : <color>"$, при 0<i<7
+puts $f "i.color : <color>"$  #при 0<i<7
 ```
 - Изменение подписей к осям: указывая при запуске xgraph 
 ```
