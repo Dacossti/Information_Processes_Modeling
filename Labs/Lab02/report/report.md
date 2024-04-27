@@ -57,12 +57,12 @@ header-includes:
   - \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
-# Цель работы
 
+# Цели работы
+ 
 Исследование протокола TCP и алгоритма управления очередью RED
 
 # Выполнение лабораторной работы
-
 
 ## Задача 1
 
@@ -80,37 +80,39 @@ header-includes:
 
 Запустил его командой $ns$.
 
-![Запуск симулятора lab2.tcl](image/image2.png){ #fig:002 width=70% }
+![График динамики размера окна TCP](image/image2.png){ #fig:002 width=70% }
+
+![График динамики размера окна TCP](image/image3.png){ #fig:003 width=70% }
 
 
 ## Задача 2
 
 
 Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с Reno на NewReno:
+'''
+set tcp1 [$ns create-connection TCP/NewReno $node_(s1) TCPSink $node_(s3) 0]
+'''
 
-![Изменение на узле s1 типа протокола TCP с Reno на NewReno](image/image3.png){ #fig:003 width=70% }
+![Изменение на узле s1 типа протокола TCP с Reno на NewReno](image/image4.png){ #fig:004 width=70% }
 
-Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с Reno на NewReno:
 
-![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image3.png){ #fig:003 width=70% }
+Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с NewReno на Vegas:
+'''
+set tcp1 [$ns create-connection TCP/Vegas $node_(s1) TCPSink $node_(s3) 0]
+'''
+
+![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image5.png){ #fig:005 width=70% }
 
 Внес сдледующие изменения при отображении окон с графиками:
 
-- Изменение цвета фона
+- Изменение цвета фона: указывая ключ $-bg <color>$ , например $-bg white$
+- Изменение цвета траекторий: указывая $puts $f "i.color : <color>"$, при $0<i<7$
+- Изменение подписей к осям: указывая при запуске xgraph $-x <name>$ или $-y <name>$ для осей абцисс и ординат соответственно.
+- Изменение подписи траектории в легенде: указывая $puts $f "TitleText: <text>" в файле запуска мониторинга или $-t <text>$ при запуске xgraph
 
-![Изменение цвета фона](image/image4.png){ #fig:004 width=70% }
+![График динамики размера окна TCP/Reno после изменений](image/image6.png){ #fig:006 width=70% }
 
-- Изменение цвета траекторий
-
-![Изменение цвета траекторий](image/image5.png){ #fig:005 width=70% }
-
-- Изменение подписей к осям
-
-![Изменение подписей к осям](image/image6.png){ #fig:006 width=70% }
-
-- Изменение подписи траектории в легенде
-
-![Изменение подписи траектории в легенде](image/image7.png){ #fig:007 width=70% }
+![График динамики размера окна TCP/Vegas после изменений](image/image7.png){ #fig:007 width=70% }
 
 
 # Выводы
