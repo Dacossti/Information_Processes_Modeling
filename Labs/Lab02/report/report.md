@@ -89,17 +89,17 @@ header-includes:
 
 
 Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с Reno на NewReno:
-'''
+```
 set tcp1 [$ns create-connection TCP/NewReno $node_(s1) TCPSink $node_(s3) 0]
-'''
+```
 
 ![Изменение на узле s1 типа протокола TCP с Reno на NewReno](image/image4.png){ #fig:004 width=70% }
 
 
 Отредактировал файл lab2.tc, изменив в модели на узле s1 тип протокола TCP с NewReno на Vegas:
-'''
+```
 set tcp1 [$ns create-connection TCP/Vegas $node_(s1) TCPSink $node_(s3) 0]
-'''
+```
 
 ![Изменение на узле s1 типа протокола TCP с NewReno на Vegas](image/image5.png){ #fig:005 width=70% }
 
